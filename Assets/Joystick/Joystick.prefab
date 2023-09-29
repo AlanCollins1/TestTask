@@ -33,7 +33,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8196812613351606090}
-  - {fileID: 8196812613576827625}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -120,6 +119,7 @@ MonoBehaviour:
   _stickTransform: {fileID: 8152475456537471219}
   _size: 0.136
   _stickSize: 0.279
+  <Value>k__BackingField: {x: 0, y: 0}
   _canvasRectTransform: {fileID: 8196812612993696243}
   _matchVariant: 1
   EventOnDown:
@@ -132,6 +132,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _backgroundFollowPointer: 1
+  _hideJoystic: 1
   _joystickArea: {fileID: 8196812613351606089}
 --- !u!1 &8152475456537471220
 GameObject:
@@ -239,7 +240,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 8196812613576827625}
   m_Father: {fileID: 8196812612993696243}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -323,18 +325,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8196812613576827624}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8152475456537471219}
-  m_Father: {fileID: 8196812612993696243}
-  m_RootOrder: 1
+  m_Father: {fileID: 8196812613351606090}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 187.91, y: 180.49}
+  m_AnchoredPosition: {x: 187.91, y: 180.49014}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8196812613576827620

@@ -62,9 +62,9 @@ public class Joystick : MonoBehaviour
 
     void UpdateSize()
     {
-        Vector2 backgroundSize = GetBackgroundSize();
-        _backgroundTransform.sizeDelta = backgroundSize;
-        _stickTransform.sizeDelta = backgroundSize * _stickSize;
+            Vector2 backgroundSize = GetBackgroundSize();
+            _backgroundTransform.sizeDelta = backgroundSize;
+            _stickTransform.sizeDelta = backgroundSize * _stickSize;
     }
 
     Vector2 GetBackgroundSize()
