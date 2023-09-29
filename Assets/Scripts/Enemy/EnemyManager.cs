@@ -9,7 +9,7 @@ public class EnemyManager : MonoBehaviour {
     public int NumberOfEnemies;
     private void Start() {
         for (int i = 0; i < NumberOfEnemies; i++) {
-            GameObject _newEnemy = Instantiate(EnemyPrefab, new Vector2(Random.Range(-10f, 10f), Random.Range(-10f, 10f)), Quaternion.identity);
+            GameObject _newEnemy = Instantiate(EnemyPrefab, new Vector2(Random.Range(-20f, 20f) + Player.transform.position.x, Random.Range(-20f, 20f) + Player.transform.position.y) , Quaternion.identity);
             _newEnemy.GetComponent<Enemy>().Init(Player.transform);
             _newEnemy.GetComponent<EnemyHealth>().Init(Loots);
         }

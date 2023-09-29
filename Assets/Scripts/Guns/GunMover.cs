@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class GunMover : MonoBehaviour {
     [SerializeField] private Joystick _joystick;
-    public float Speed;
 
     private void FixedUpdate() {
         //Debug.Log(Mathf.Atan2(_joystick.Value.y,_joystick.Value.x) * Mathf.Rad2Deg);
