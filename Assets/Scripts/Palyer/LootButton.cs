@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class LootButton : MonoBehaviour {
     public int LootID = -1;
     public Image LootSprite;
-    public int Number;
+    public int Number = 0;
     public TextMeshProUGUI LootName;
     public TextMeshProUGUI NumberText;
 
@@ -17,7 +17,7 @@ public class LootButton : MonoBehaviour {
         LootName.text = loot.LootName;
     }
     public void AddLoot() {
-        Number = Number + 1;
+        Number++;
         Debug.Log("Number" + Number.ToString() + " : " + "LootID" + LootID.ToString());
         if (Number > 1) {
             NumberText.text = Number.ToString();
