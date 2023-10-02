@@ -30,6 +30,9 @@ public class LootButton : MonoBehaviour {
         if (Number > 1) {
             NumberText.text = Number.ToString();
         }
+        else {
+            NumberText.text = null;
+        }
         //LootName.text = loot.LootName;
     }
 }
